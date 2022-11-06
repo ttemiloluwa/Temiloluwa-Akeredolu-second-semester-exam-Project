@@ -12,7 +12,7 @@ export default function HomeContainer() {
       </div>
       <div className="capitalize container">
         <div>Logged in user: {user?.name}</div>
-        <div>Time logged in: {JSON.parse(JSON.stringify(user?.time))}</div>
+        <div>Time logged in: {JSON.parse(JSON.stringify(user?.time || ""))}</div>
       </div>
     </>
   );
